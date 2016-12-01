@@ -9,6 +9,10 @@ $fields = array('name' => 'First Name',
  'email' => 'Email',
  'phone' => 'Phone',
  'message' => 'Message'
+ 'project_type' => 'Project Type',
+ 'mock_up' => 'Mock Up',
+ 'budget' => 'Budget',
+ 'referral' => 'Referral'
  ); // array variable name => Text to appear in email // array variable name => Text to appear in email
 $okMessage = 'Contact form succesfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
