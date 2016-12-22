@@ -4,18 +4,374 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-
-#dac-logo {
-  width: 200px;
-  margin-top: -20px;
+ /*testimonial begins*/
+ #carousel-testimonials .carousel-indicators {
+    bottom: inherit;
+    top: 20rem;
 }
-.btn-success {
-  background-color: #2e3973;
-      border-color: #fff;
+#carousel-testimonials .carousel-indicators li{ 
+    border :2px solid #7c8a8d; 
+    width:16px; 
+    height:16px;
+    margin:0px;
+    } 
+#carousel-testimonials .carousel-indicators .active {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    background-color: #ac1c20;
+    border :2px solid #ac1c20;
+}
+#carousel-testimonials .caption blockquote{
+    font-size:36px;
+    color:#282828;
+    
+}
+#carousel-testimonials .caption small cite{
+    color:#4a4f55;
+    font-size:20px;
+}
+#carousel-testimonials .caption #stars-existing{
+    display:inline-block;
+    font-size:28px;
+}
+#carousel-testimonials .caption #stars-existing .glyphicon-star-empty{
+    color:#ac1c20;
 }
 
-/*i.icon {
-  color: #fff;
+#carousel-testimonials .caption #stars-existing .glyphicon-star{
+    color:#ac1c20;
+}
+
+ /*testomial ends*/
+
+/* Pricing begins*/
+    .panel.price,
+    .panel.price>.panel-heading{
+      border-radius:0px;
+       -moz-transition: all .3s ease;
+      -o-transition:  all .3s ease;
+      -webkit-transition:  all .3s ease;
+    }
+    .panel.price:hover{
+      box-shadow: 0px 0px 30px rgba(0,0,0, .2);
+    }
+    .panel.price:hover>.panel-heading{
+      box-shadow: 0px 0px 30px rgba(0,0,0, .2) inset;
+    }
+    
+        
+    .panel.price>.panel-heading{
+      box-shadow: 0px 5px 0px rgba(50,50,50, .2) inset;
+      text-shadow:0px 3px 0px rgba(50,50,50, .6);
+    }
+      
+    .price .list-group-item{
+      border-bottom-:1px solid rgba(250,250,250, .5);
+    }
+    
+    .panel.price .list-group-item:last-child {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    .panel.price .list-group-item:first-child {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    
+    .price .panel-footer {
+      color: #fff;
+      border-bottom:0px;
+      background-color:  rgba(0,0,0, .1);
+      box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+    }
+    
+    
+    .panel.price .btn{
+      box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+      border:0px;
+    }
+    
+  /* green panel */
+  
+    
+    .price.panel-green>.panel-heading {
+      color: #fff;
+      background-color: #57AC57;
+      border-color: #71DF71;
+      border-bottom: 1px solid #71DF71;
+    }
+    
+      
+    .price.panel-green>.panel-body {
+      color: #fff;
+      background-color: #65C965;
+    }
+        
+    
+    .price.panel-green>.panel-body .lead{
+        text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+    }
+    
+    .price.panel-green .list-group-item {
+      color: #333;
+      background-color: rgba(50,50,50, .01);
+      font-weight:600;
+      text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+    }
+    
+    /* blue panel */
+  
+    
+    .price.panel-blue>.panel-heading {
+      color: #fff;
+      background-color: #608BB4;
+      border-color: #78AEE1;
+      border-bottom: 1px solid #78AEE1;
+    }
+    
+      
+    .price.panel-blue>.panel-body {
+      color: #fff;
+      background-color: #73A3D4;
+    }
+        
+    
+    .price.panel-blue>.panel-body .lead{
+        text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+    }
+    
+    .price.panel-blue .list-group-item {
+      color: #333;
+      background-color: rgba(50,50,50, .01);
+      font-weight:600;
+      text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+    }
+    
+    /* red price */
+    
+  
+    .price.panel-red>.panel-heading {
+      color: #fff;
+      background-color: #D04E50;
+      border-color: #FF6062;
+      border-bottom: 1px solid #FF6062;
+    }
+    
+      
+    .price.panel-red>.panel-body {
+      color: #fff;
+      background-color: #EF5A5C;
+    }
+    
+    
+    
+    
+    .price.panel-red>.panel-body .lead{
+        text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+    }
+    
+    .price.panel-red .list-group-item {
+      color: #333;
+      background-color: rgba(50,50,50, .01);
+      font-weight:600;
+      text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+    }
+    
+    /* grey price */
+    
+  
+    .price.panel-grey>.panel-heading {
+      color: #fff;
+      background-color: #6D6D6D;
+      border-color: #B7B7B7;
+      border-bottom: 1px solid #B7B7B7;
+    }
+    
+      
+    .price.panel-grey>.panel-body {
+      color: #fff;
+      background-color: #808080;
+    }
+    
+
+    
+    .price.panel-grey>.panel-body .lead{
+        text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+    }
+    
+    .price.panel-grey .list-group-item {
+      color: #333;
+      background-color: rgba(50,50,50, .01);
+      font-weight:600;
+      text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+    }
+    
+    /* white price */
+    
+  
+    .price.panel-white>.panel-heading {
+      color: #333;
+      background-color: #f9f9f9;
+      border-color: #ccc;
+      border-bottom: 1px solid #ccc;
+      text-shadow: 0px 2px 0px rgba(250,250,250, .7);
+    }
+    
+    .panel.panel-white.price:hover>.panel-heading{
+      box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset;
+    }
+      
+    .price.panel-white>.panel-body {
+      color: #fff;
+      background-color: #dfdfdf;
+    }
+        
+    .price.panel-white>.panel-body .lead{
+        text-shadow: 0px 2px 0px rgba(250,250,250, .8);
+        color:#666;
+    }
+    
+    .price:hover.panel-white>.panel-body .lead{
+        text-shadow: 0px 2px 0px rgba(250,250,250, .9);
+        color:#333;
+    }
+    
+    .price.panel-white .list-group-item {
+      color: #333;
+      background-color: rgba(50,50,50, .01);
+      font-weight:600;
+      text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+    }
+/*Pricing Ends*/
+/*Workshop*/
+.project-name {
+    background: transparent;
+    width: 100%;
+    height: 160px;
+    overflow-y: scroll;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0 15px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
+}
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+/*Login details*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+
+
+or: #fff;
 }*/
 
 .heading-font {
@@ -31,6 +387,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 html,
 body {
   height: 100%;
@@ -43,7 +400,7 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #fdcc52;
+  color: blue;
 }
 a:hover,
 a:focus {
@@ -75,7 +432,7 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.navbar-default {
+/*.navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
   -webkit-transition: all 0.35s;
@@ -84,12 +441,20 @@ p {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-}
-.navbar-default .navbar-header .navbar-brand {
+}*/
+/*.navbar-default .navbar-header .navbar-brand {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  color: #fdcc52;
+  color: blue;
+}*/
+.navbar-inverse .navbar-brand {
+    color: #000;
+}
+
+.navbar-inverse {
+     background-color: #fff; 
+     border-color: #fff; 
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -112,18 +477,18 @@ p {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: blue;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #fdcc52 !important;
+  color: blue !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -142,17 +507,17 @@ p {
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
     color: white;
-  }
-  .navbar-default.affix {
+  }*/
+ /* .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.1);
-  }
-  .navbar-default.affix .navbar-header .navbar-brand {
+  }*/
+/*  .navbar-default.affix .navbar-header .navbar-brand {
     color: #222222;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #fdcc52;
+    color: blue;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -160,13 +525,14 @@ p {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #fdcc52;
-  }
-}
+    color: blue;
+  }*/
+/*}*/
 header {
   position: relative;
   width: 100%;
   min-height: auto;
+  margin-top: -30px;
   overflow-y: hidden;
   background-color: #3F5272;
   /* fallback for old browsers */
@@ -233,8 +599,13 @@ header .device-container .screen img {
   }
 }
 section {
-  padding: 100px 0;
-  background-color: #3F5272;
+    padding: 100px 0;
+    background-color: #000;
+}
+
+section.workshops {
+    padding: 100px 0;
+    background-color: #3F5272;
 }
 section h2 {
   font-size: 50px;
@@ -415,7 +786,7 @@ footer ul li a.active {
   background: linear-gradient(#2e3973, #151f55);
 }
 .text-primary {
-  color: #fdcc52;
+  color: blue;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -431,8 +802,8 @@ footer ul li a.active {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background-color: #fdcc52;
-  border-color: #fdcc52;
+  background-color: blue;
+  border-color: blue;
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
