@@ -56,7 +56,7 @@
             <li class="active"><a href="#about">About</a></li>
             <li><a href="#program">Our Program</a></li>
             <li class="dropdown">
-              <a href="#workshops" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
+              <a href="#workshop" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Intro to Project Management</a></li>
                 <li><a href="#">Intro to Photography</a></li>
@@ -126,22 +126,32 @@
 </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
+<div id="video-wrapper" class="video-wrapper">
+<!-- http://codepen.io/klas/pen/sKJAB -->
 
+    <video autoplay loop  id="bgvid">
+    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunxxxny.webm" type="video/webm">
+   <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="container-fluid content">
 <header>
     <div class="container" id="about">
         <div class="row">
             <div class="col-sm-12">
                 <div class="header-content">
                     <div class="header-content-inner">
+                  <h1>Site Currently Construction - Coming January 2017!</h1>
                         <h1>Digital Art Crew is a multimedia and tech education training company designed to teach individuals the fundamentals of design and computer programming through an online e-learning video platform.</h1>
                         <a href="#contact" class="btn btn-outline btn-xl page-scroll">Ready to get started?</a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
-</div>
+
 </header>
 
 <section id="program" class="program">
@@ -160,7 +170,7 @@
 
 </section>
 
-<section class="no-padding workshops" id="workshops">
+<section class="no-padding workshops" id="workshop">
    <div class="container">
     <div class="row">
         <div class="col-sm-12 text-center">
@@ -361,7 +371,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-red">
                         <div class="panel-heading  text-center">
@@ -385,7 +395,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-blue">
                         <div class="panel-heading arrow_box text-center">
@@ -409,7 +419,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-green">
                         <div class="panel-heading arrow_box text-center">
@@ -433,7 +443,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-grey">
                         <div class="panel-heading arrow_box text-center">
@@ -457,7 +467,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-white">
                         <div class="panel-heading arrow_box text-center">
@@ -481,7 +491,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-white">
                         <div class="panel-heading arrow_box text-center">
@@ -505,7 +515,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-white">
                         <div class="panel-heading arrow_box text-center">
@@ -529,7 +539,7 @@
                 </div>
                 
                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                    
+
                     <!-- PRICE ITEM -->
                     <div class="panel price panel-white">
                         <div class="panel-heading arrow_box text-center">
@@ -569,14 +579,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-3"><img class="img-circle" src="./img/donte.png"><h3>Donte Burney</h3></div>
-            <div class="col-xs-3"><img class="img-circle" src="./img/garrett.png"><h3>Garrett Bradley</h3></div>
-            <div class="col-xs-3"><img class="img-circle" src="./img/karim.png"><h3>Karim Mayfield</h3></div>
-            <div class="col-xs-3"><img class="img-circle" src="./img/daniel.png"><h3>Daniel Robertson</h3></div>
+            <div class="col-md-3"><img class="img-circle img-responsive center-block" src="./img/donte.png"><h3 class="text-center">Donte Burney</h3></div>
+            <div class="col-md-3"><img class="img-circle img-responsive center-block" src="./img/garrett.png"><h3 class="text-center">Garrett Bradley</h3></div>
+            <div class="col-md-3"><img class="img-circle img-responsive center-block" src="./img/karim.png"><h3 class="text-center">Karim Mayfield</h3></div>
+            <div class="col-md-3"><img class="img-circle img-responsive center-block" src="./img/daniel.png"><h3 class="text-center">Daniel Robertson</h3></div>
         </div>
     </div>
-    
-    
+
+
 </section>
 
 
@@ -588,8 +598,12 @@
 <section class="cta">
     <div class="cta-content">
         <div class="container">
-            <h2>Transforming ideas into Reality<br>through technology.</h2>
-            <a href="#contact" class="btn btn-outline btn-xl page-scroll">Digital Art Crew</a>
+        <h2>Experience</h2>
+           <div class="col-sm-12">
+              <img width="100%" src="./img/story.png">
+            </div>
+           <!--  <h2>Transforming ideas into Reality<br>through technology.</h2>
+            <a href="#contact" class="btn btn-outline btn-xl page-scroll">Digital Art Crew</a> -->
         </div>
     </div>
     <div class="overlay"></div>
@@ -601,13 +615,13 @@
       <ol class="carousel-indicators">
         <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-        
+
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-          
+
           <div class="caption">
               <blockquote>
                   "We are all constructed 
@@ -617,11 +631,11 @@
                <div id="stars-existing" class="starrr" data-rating='4'></div>— BRYANT MCGILL</cite></small>
                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
                 Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum</p>
-                
+
             </div>
         </div>
         <div class="item">
-           
+
          <div class="caption">
           <blockquote>
               "We are all constructed 
@@ -631,10 +645,10 @@
            <div id="stars-existing" class="starrr" data-rating='4'></div>— BRYANT MCGILL</cite></small>
            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
             Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum</p>
-            
+
         </div>
     </div>
-    
+
 </div>
 
 
@@ -650,9 +664,10 @@
 <footer>
     <div class="container">
         <p>&copy; 2016 Digital Art Crew. All Rights Reserved.</p>
-        
+
     </div>
 </footer>
+</div>
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>

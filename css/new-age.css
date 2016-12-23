@@ -3,7 +3,35 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ /*video background*/
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index:-1;
+}
 
+.video-wrapper video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+}
+
+.content {
+  position: relative;
+  margin: 60px auto;
+  /*width: 80%;*/
+ /* max-width: 640px;*/
+  z-index: 1;
+}
+/*video background ends*/
  /*testimonial begins*/
  #carousel-testimonials .carousel-indicators {
     bottom: inherit;
@@ -534,7 +562,8 @@ header {
   min-height: auto;
   margin-top: -30px;
   overflow-y: hidden;
-  background-color: #3F5272;
+  color: #000;
+  background-color: rgba(0,0,255,0.3);
   /* fallback for old browsers */
   
   color: white;
